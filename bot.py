@@ -19,5 +19,5 @@ app = Client(
 
 
 # Start the bot
-print("🎊 I AM ALIVE 🎊")
+print("🎊 I AM ALIVE 🎊📥")
 app.run()
