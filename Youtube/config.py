@@ -8,4 +8,4 @@ class Config(object):
     #Add your channel id. For force Subscribe.
     CHANNEL = os.environ.get("CHANNEL", "")
     #Skip or add your proxy from https://github.com/rg3/youtube-dl/issues/1091#issuecomment-230163061
-    HTTP_PROXY = '14.143.130.210:1111'
+    HTTP_PROXY = '20.193.135.50:80'
