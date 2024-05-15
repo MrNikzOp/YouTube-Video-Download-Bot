@@ -9,4 +9,3 @@ class Config(object):
     CHANNEL = os.environ.get("CHANNEL", "")
     #Skip or add your proxy from https://github.com/rg3/youtube-dl/issues/1091#issuecomment-230163061
     HTTP_PROXY = ''
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "Lufffybro_bot")
