@@ -31,15 +31,14 @@ async def about(client, message):
     ))
 
 # Test Command Handler
-photo= "https://images.app.goo.gl/hQugbixfH5MRysCc8"
 @Client.on_message(filters.private & filters.command("test"))
 async def about(client, message):
     if Config.CHANNEL:
       fsub = await handle_force_subscribe(client, message)
       if fsub == 400:
         return            
-    await message.reply_photo(
-        photo=photo,
+    await message.reply_text(
+        photo=https://images.app.goo.gl/hQugbixfH5MRysCc8,
         caption=Translation.ABOUT_TXT,
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
