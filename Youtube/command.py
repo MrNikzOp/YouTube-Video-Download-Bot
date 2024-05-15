@@ -26,7 +26,7 @@ async def about(client, message):
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton('⛔️ Close', callback_data='cancel')]
+            [InlineKeyboardButton('⛔️ ᴄʟᴏꜱᴇ', callback_data='cancel')]
         ]
     ))
 
@@ -44,14 +44,14 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton('📍 Update Channel', url='https://t.me/NT_BOT_CHANNEL'),
+                InlineKeyboardButton('📍 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/https://t.me/+qveQSMp0Hl9mMzdh'),
             ],
             [
-                InlineKeyboardButton('👩‍💻 Developer', url='https://t.me/LISA_FAN_LK'),
-                InlineKeyboardButton('👥 Support Group', url='https://t.me/NT_BOTS_SUPPORT'),
+                InlineKeyboardButton('👩‍💻ᴅᴇᴠᴇʟᴏᴘᴇʀr', url='https://t.me/Luffy0000007'),
+                InlineKeyboardButton('👥 ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+qveQSMp0Hl9mMzdh'),
             ],
             [
-                InlineKeyboardButton('⛔️ Close', callback_data='cancel')
+                InlineKeyboardButton('⛔️ ᴄʟᴏꜱᴇ', callback_data='cancel')
             ]
         ]
     ))
@@ -66,7 +66,6 @@ To upload a YouTube video, simply send me the YouTube link.
     
 Enjoy using the bot!
 
-   ©️ Channel : @NT_BOT_CHANNEL
     """
     message.reply_text(help_text)
 
