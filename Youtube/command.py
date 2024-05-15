@@ -30,6 +30,24 @@ async def about(client, message):
         ]
     ))
 
+# Test Command Handler
+photo= "https://images.app.goo.gl/hQugbixfH5MRysCc8"
+@Client.on_message(filters.private & filters.command("test"))
+async def about(client, message):
+    if Config.CHANNEL:
+      fsub = await handle_force_subscribe(client, message)
+      if fsub == 400:
+        return            
+    await message.reply_photo(
+        photo=photo,
+        caption=Translation.ABOUT_TXT,
+        disable_web_page_preview=True,
+        reply_markup=InlineKeyboardMarkup(
+        [
+            [InlineKeyboardButton('⛔️ ᴄʟᴏꜱᴇ', callback_data='cancel')]
+        ]
+    ))
+
 
 # Start command handler
 @Client.on_message(filters.private & filters.command("start"))
@@ -60,11 +78,11 @@ async def start(client, message):
 @Client.on_message(filters.command("help"))
 def help(client, message):
     help_text = """
-    Welcome to the YouTube Video Uploader Bot!
+    __**Welcome to the YouTube Video Uploader Bot!
 
 To upload a YouTube video, simply send me the YouTube link.
     
-Enjoy using the bot!
+Enjoy using the bot!**__
 
     """
     message.reply_text(help_text)
