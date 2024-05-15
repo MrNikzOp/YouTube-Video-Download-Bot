@@ -12,7 +12,7 @@ def generate_thumbnail(client, message):
         # Get the YouTube video URL from the message
         video_url = message.text.split(" ", 1)[1]
 
-        wait_message = message.reply_text("Downloading your thumbnail")
+        wait_message = message.reply_text("**Downloading Your Thumbnail**")
         
         # Get the thumbnail URL using yt-dlp
         with yt_dlp.YoutubeDL({}) as ydl:
