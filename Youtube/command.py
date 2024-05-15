@@ -20,7 +20,7 @@ async def about(client, message):
       fsub = await handle_force_subscribe(client, message)
       if fsub == 400:
         return      
-    await message.reply_photo(photo="https://images.app.goo.gl/hQugbixfH5MRysCc8", caption="text=Translation.ABOUT_TXT")      
+ #   await message.reply_photo(photo="https://images.app.goo.gl/hQugbixfH5MRysCc8", caption="text=Translation.ABOUT_TXT")      
     await message.reply_text(
         text=Translation.ABOUT_TXT,
         disable_web_page_preview=True,
