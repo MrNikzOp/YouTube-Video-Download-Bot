@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from YouTube.config import Config
+from Youtube.config import Config
 from pyrogram.types import ( InlineKeyboardButton, InlineKeyboardMarkup,ForceReply)
 @Client.on_message(filters.private & filters.command(["invite"]))
 async def refer(client,message):
