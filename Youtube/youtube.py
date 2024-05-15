@@ -21,7 +21,7 @@ async def process_youtube_link(client, message):
         return
     youtube_link = message.text
     try:
-        downloading_msg = await message.reply_text("Downloading video...")
+        downloading_msg = await message.reply_text("**📥 Downloading Video...**")
 
         ydl_opts = {
             'outtmpl': 'downloaded_video_%(id)s.%(ext)s',
@@ -41,7 +41,7 @@ async def process_youtube_link(client, message):
 
             if title:
                 ydl.download([youtube_link])
-                uploading_msg = await message.reply_text("Uploading video...")
+                uploading_msg = await message.reply_text("**📤 Uploading Video...**")
                 video_filename = f"downloaded_video_{info_dict['id']}.mp4"
                 sent_message = await client.send_video(message.chat.id, video=open(video_filename, 'rb'), caption=title)
 
@@ -49,11 +49,11 @@ async def process_youtube_link(client, message):
                 await downloading_msg.delete()
                 await uploading_msg.delete()
 
-                await message.reply_text("\n\nOWNER : @LISA_FAN_LK 💕\n\nSUCCESSFULLY UPLOADED!")
+                await message.reply_text("\n\nOWNER : @Luffy0000007 💕\n\nSUCCESSFULLY UPLOADED!")
             else:
                 logging.error("No video streams found.")
                 await message.reply_text("Error: No downloadable video found.")
     except Exception as e:
         logging.exception("Error processing YouTube link: %s", e)
-        await message.reply_text("Error: Failed to process the YouTube link. Please try again later.")
+        await message.reply_text("**Error: Failed To Process The YouTube Link. Please Try Again Later.**")
       
