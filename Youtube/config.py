@@ -9,7 +9,3 @@ class Config(object):
     CHANNEL = os.environ.get("CHANNEL", "-1002070853757")
     #Skip or add your proxy from https://github.com/rg3/youtube-dl/issues/1091#issuecomment-230163061
     HTTP_PROXY = ''
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002070853757"))
-    LOGGER = logging
-    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1002070853757")
-     
