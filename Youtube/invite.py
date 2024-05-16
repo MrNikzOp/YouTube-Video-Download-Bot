@@ -8,8 +8,11 @@ async def refer(client,message):
        		  [ 
        		    InlineKeyboardButton("📡 Sʜᴀʀᴇ Yᴏᴜʀ Lɪɴᴋ" ,url=f"https://t.me/share/url?url=https://t.me/Lufffybro_bot?start={message.from_user.id}") ],
        		     [
-       		                    InlineKeyboardButton('👩‍💻ᴅᴇᴠᴇʟᴏᴘᴇʀr', url='https://t.me/Luffy0000007'),
+       		                    InlineKeyboardButton('👩‍💻ᴅᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/Luffy0000007'),
        		                    InlineKeyboardButton('👥 ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+qveQSMp0Hl9mMzdh'),
-       		                ]
+       		                ],
+                [
+                    InlineKeyboardButton('⛔️ ᴄʟᴏꜱᴇ', callback_data='cancel')
+                ]
        		    ])
     await message.reply_photo(photo="./775f18aed5f6c9f3e5d332e158c092dd.jpg",reply_markup=reply_markup,)
