@@ -2,7 +2,7 @@
 
 # [⚠️ Do not change this repo link ⚠️] :- https://github.com/LISA-KOREA/YouTube-Video-Download-Bot
 
-# [ ♻️ Luffy Bot  ♻️ ]
+# [ ♻️ Luffy Bot ♻️ ]
 
 
 from pyrogram import Client, filters
