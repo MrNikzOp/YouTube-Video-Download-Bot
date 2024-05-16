@@ -22,7 +22,7 @@ async def about(client, message):
         return      
  #   await message.reply_photo(photo="https://images.app.goo.gl/hQugbixfH5MRysCc8", caption="text=Translation.ABOUT_TXT")      
     await message.reply_text(
-        photo=
+        photo=775f18aed5f6c9f3e5d332e158c092dd.jpg,
         text=Translation.ABOUT_TXT,
         reply_markup=InlineKeyboardMarkup(
         [
