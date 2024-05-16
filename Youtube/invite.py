@@ -15,4 +15,4 @@ async def refer(client,message):
                     InlineKeyboardButton('⛔️ ᴄʟᴏꜱᴇ', callback_data='cancel')
                 ]
        		    ])
-    await message.reply_photo(photo="./775f18aed5f6c9f3e5d332e158c092dd.jpg",reply_markup=reply_markup,)
+    await message.reply_photo(photo="./775f18aed5f6c9f3e5d332e158c092dd.jpg",caption="__**INVITE YOUR FRIENDS**__",reply_markup=reply_markup,)
