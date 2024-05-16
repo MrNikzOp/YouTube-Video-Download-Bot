@@ -15,8 +15,7 @@ async def refer(client,message):
                     InlineKeyboardButton('⛔️ ᴄʟᴏꜱᴇ', callback_data='cancel')
                 ]
        		    ])
-    await message.reply_photo(photo="./775f18aed5f6c9f3e5d332e158c092dd.jpg",
-                              caption="**Mʏ ɴᴀᴍᴇ** : [ᴜᴘʟᴏᴀᴅᴇʀ ʙᴏᴛ ᴠ4](https://t.me/UploadLinkToFileBot)
+    await message.reply_photo(photo="./775f18aed5f6c9f3e5d332e158c092dd.jpg",caption="**Mʏ ɴᴀᴍᴇ** : [ᴜᴘʟᴏᴀᴅᴇʀ ʙᴏᴛ ᴠ4](https://t.me/UploadLinkToFileBot)
 
 **Cʜᴀɴɴᴇʟ** : [Luffy Bᴏᴛs](https://t.me/NT_BOT_CHANNEL)
 
@@ -30,5 +29,4 @@ async def refer(client,message):
 
 **Fʀᴀᴍᴇᴡᴏʀᴋ :** [ᴘʏʀᴏɢᴀᴍ 2.0.106](https://docs.pyrogram.org/)
 
-**Dᴇᴠᴇʟᴏᴘᴇʀ :** @Luffy0000007",
-                              reply_markup=reply_markup,)
+**Dᴇᴠᴇʟᴏᴘᴇʀ :** @Luffy0000007",reply_markup=reply_markup,)
