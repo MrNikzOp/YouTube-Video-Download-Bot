@@ -18,4 +18,4 @@ async def list(client, message):
             InlineKeyboardButton('⛔️ ᴄʟᴏꜱᴇ', callback_data='cancel'),
             ]
       ])         
-await message.reply_photo(photo=random.choice(PICS), caption=HELP_TEXT.format(user=message.from_user.mention, bot=client.mention), reply_markup=reply_markup,)
+await message.reply_photo(photo=random.choice(PICS), caption=HELP_TEXT.format(message.from_user.first_name), reply_markup=reply_markup,)
