@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from Luffy.config import Config
+from Youtube.config import Config
 from pyrogram.types import ( InlineKeyboardButton, InlineKeyboardMarkup,ForceReply)
 
 photo= "./775f18aed5f6c9f3e5d332e158c092dd.jpg"
