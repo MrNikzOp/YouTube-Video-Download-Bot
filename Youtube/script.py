@@ -14,9 +14,19 @@ class Translation(object):
 ╰───────────────⍟
 """
 HELP_TEXT = """
-**Welcome to the YouTube Video Uploader Bot!
+<b>✨ Hᴇʟʟᴏ {user}.
 
-To upload a YouTube video, simply send me the YouTube link.
+Mʏ Nᴀᴍᴇ Is {bot}.
+
+Welcome to the YouTube Video Uploader Bot!
+
+To Upload a YouTube Video, Simply Send me the YouTube link.
     
-Enjoy using the bot!**
+Enjoy using the bot!
+╭───────────⍟     
+├ /start - Check Bot Online 🔔
+├ /help - How To Use The Bot 🆘
+├ /about - Something About Me 😌
+├ /thumbnail - generate video thumbnail 
+╰───────────────⍟
 """
