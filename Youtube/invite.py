@@ -12,4 +12,4 @@ async def refer(client,message):
        		                    InlineKeyboardButton('👥 ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+qveQSMp0Hl9mMzdh'),
        		                ]
        		    ])
-    await message.reply_photo(photo="./775f18aed5f6c9f3e5d332e158c092dd.jpg",caption=ABOUT_TEXT, reply_markup=reply_markup,)
+    await message.reply_photo(photo="./775f18aed5f6c9f3e5d332e158c092dd.jpg",caption="**INVITE YOUR FRIENDS\nEnjoy 📥**", reply_markup=reply_markup,)
