@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from Youtube.config import Config
 from pyrogram.types import ( InlineKeyboardButton, InlineKeyboardMarkup,ForceReply)
-    @Client.on_message(filters.private & filters.command(["test"]))
+    @Client.on_message(filters.private & filters.command("test"))
     async def test(client,message):
         reply_markup = InlineKeyboardMarkup(
            		[ 
