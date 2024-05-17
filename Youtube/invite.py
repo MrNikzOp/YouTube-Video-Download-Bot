@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 from Youtube.config import Config
-from Youttube.config import PICS
+from Youtube.config import PICS
 from Youtube.script import Translation
 from pyrogram.types import ( InlineKeyboardButton, InlineKeyboardMarkup,ForceReply)
 
