@@ -1,3 +1,6 @@
+from pyrogram import Client, filters, enums
+from Youtube.config import Config
+
 @Client.on_message(filters.command(["info"]))
 async def user_info(client, message):
     status_message = await message.reply_text("`ᴩʟᴇᴀꜱᴇ ᴡᴀɪᴛ....`")
