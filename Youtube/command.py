@@ -25,7 +25,7 @@ async def about(client, message):
         text=Translation.ABOUT_TXT,
         reply_markup=InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton('⛔️ ᴄʟᴏꜱᴇ', callback_data='cancel')]
+            [InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel')]
         ]
     ))
 
@@ -51,29 +51,11 @@ async def start(client, message):
                 InlineKeyboardButton('👥 ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+qveQSMp0Hl9mMzdh'),
             ],
             [
-                InlineKeyboardButton('⛔️ ᴄʟᴏꜱᴇ', callback_data='cancel')
+                InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel')
             ]
         ]
     ))
 
-# Help command handler
-@Client.on_message(filters.command("help"))
-def help(client, message):
-    help_text = """
-**
-Welcome to the YouTube Video Uploader Bot!
 
-To Upload a YouTube Video, Simply Send me the YouTube link.
-    
-Enjoy using the bot!
-╭───────────⍟     
-├ /start - Check Bot Online 🔔
-├ /help - How To Use The Bot 🆘
-├ /about - Something About Me 😌
-├ /thumbnail - generate video thumbnail 
-╰───────────────⍟**
-
-    """
-    message.reply_text(help_text)
 
 ########################🎊 Lisa | NT BOTS 🎊######################################################
