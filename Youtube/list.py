@@ -11,4 +11,11 @@ async def list(client, message):
       fsub = await handle_force_subscribe(client, message)
       if fsub == 400:
         return
+ reply_markup =
+  InlineKeyboardMarkup(
+      [
+        [
+            InlineKeyboardButton('⛔️ ᴄʟᴏꜱᴇ', callback_data='cancel'),
+            ]
+      ])         
 await message.reply_photo(photo=random.choice(PICS), caption=HELP_TEXT.format(user=message.from_user.mention, bot=client.mention), reply_markup=reply_markup,)
