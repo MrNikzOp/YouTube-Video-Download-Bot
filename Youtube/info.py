@@ -1,6 +1,11 @@
 from pyrogram import Client, filters, enums
 from Youtube.config import Config
+from datetime import datetime
 
+@Client.on_callback_query(filters.regex("close_data"))
+async def cancel(client, callback_query):
+    await callback_query.message.delete()
+    
 @Client.on_message(filters.command(["info"]))
 async def user_info(client, message):
     status_message = await message.reply_text("`ᴩʟᴇᴀꜱᴇ ᴡᴀɪᴛ....`")
