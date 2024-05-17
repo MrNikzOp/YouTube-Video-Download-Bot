@@ -21,9 +21,8 @@ async def about(client, message):
       if fsub == 400:
         return      
    # await message.reply_photo(photo="https://telegra.ph/file/97e325476ebe8dd8676ad.jpg", caption="Test")      
-    await message.reply_photo(
-        photo="https://telegra.ph/file/97e325476ebe8dd8676ad.jpg",
-        caption=Translation.ABOUT_TXT,
+    await message.reply_text(
+        text=Translation.ABOUT_TXT,
         reply_markup=InlineKeyboardMarkup(
         [
             [InlineKeyboardButton('⛔️ ᴄʟᴏꜱᴇ', callback_data='cancel')]
