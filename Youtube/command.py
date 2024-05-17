@@ -20,7 +20,7 @@ async def about(client, message):
       fsub = await handle_force_subscribe(client, message)
       if fsub == 400:
         return      
-    await message.reply_photo(photo="https://telegra.ph/file/97e325476ebe8dd8676ad.jpg", caption="Test")      
+   # await message.reply_photo(photo="https://telegra.ph/file/97e325476ebe8dd8676ad.jpg", caption="Test")      
     await message.reply_text(
         text=Translation.ABOUT_TXT,
         reply_markup=InlineKeyboardMarkup(
