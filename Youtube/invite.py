@@ -1,6 +1,11 @@
 from pyrogram import Client, filters
 from Youtube.config import Config
 from pyrogram.types import ( InlineKeyboardButton, InlineKeyboardMarkup,ForceReply)
+
+@Client.on_callback_query(filters.regex("cancel"))
+async def cancel(client, callback_query):
+    await callback_query.message.delete()
+    
 @Client.on_message(filters.private & filters.command(["invite"]))
 async def refer(client,message):
     reply_markup = InlineKeyboardMarkup(
