@@ -60,7 +60,13 @@ async def start(client, message):
 @Client.on_message(filters.command("help"))
 def help(client, message):
     help_text = """
-**╭───────────⍟     
+**
+Welcome to the YouTube Video Uploader Bot!
+
+To Upload a YouTube Video, Simply Send me the YouTube link.
+    
+Enjoy using the bot!
+╭───────────⍟     
 ├ /start - Check Bot Online 🔔
 ├ /help - How To Use The Bot 🆘
 ├ /about - Something About Me 😌
