@@ -57,24 +57,18 @@ async def start(client, message):
     ))
     
 # Help command handler
-@Client.on_message(filters.private & filters.command("help"))
-async def help(client, message):
-    if Config.CHANNEL:
-      fsub = await handle_force_subscribe(client, message)
-      if fsub == 400:
-        return
-    #user = message.from_user
-    await message.reply_text(
-        text=Translation.HELP_TEXT.format(message.from_user.first_name),
-        bot=client.mention),
-        disable_web_page_preview=True,
-        reply_markup=InlineKeyboardMarkup(
-        [
-            [
-                InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel')
-            ]
-        ]
-    ))
+@Client.on_message(filters.command("help"))
+def help(client, message):
+    help_text = """
+    **Welcome to the YouTube Video Uploader Bot!
 
+To upload a YouTube video, simply send me the YouTube link.
+    
+Enjoy using the bot!**
+
+    """
+    message.reply_text(help_text)
+
+# [ LuffyBot ] #
 
 ########################🎊 Lisa | NT BOTS 🎊######################################################
