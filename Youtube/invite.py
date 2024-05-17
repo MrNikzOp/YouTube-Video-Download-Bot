@@ -15,6 +15,6 @@ async def refer(client,message):
        		                    InlineKeyboardButton('👥 ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+qveQSMp0Hl9mMzdh'),
        		                ]
        		    ])
-    await message.reply_photo(photo='https://telegra.ph/file/97e325476ebe8dd8676ad.jpg', caption=START_TEXT,reply_markup=reply_markup,)
+    await message.reply_photo(photo='https://telegra.ph/file/97e325476ebe8dd8676ad.jpg', caption="Tesst",reply_markup=reply_markup,)
     
     # [ LuffyBot ] #
