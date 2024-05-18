@@ -2,7 +2,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 class Translation(object):
 
-    START_TEXT = '__**Hello,** {message.from_user.first_name}!\n\n**Send me the YouTube link of the video you want to upload**__' 
+    START_TEXT = '__**Hello,** {}!\n\n**Send me the YouTube link of the video you want to upload**__' 
 
     ABOUT_TXT = """
 ╭───────────⍟
@@ -12,7 +12,7 @@ class Translation(object):
 ├👥 **Support Group** : [LUFFY BOTS SUPPORT](https://t.me/Luffy0000007)
 ├🥏 **Channel** : [LUFFY BOT CHANNEL](https://t.me/Luffy0000007)
 ├⛲ **Source** : [Click Here](https://github.com/LISA-KOREA/YouTube-Video-Download-Bot)
-├🎓 **Developer** : [ㅤᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ. Anonymous ❂℡](https://t.me/Luffy0000007)
+├🎓 **Developer** : **[ㅤᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ. Anonymous ❂℡](https://t.me/Luffy0000007)**
 ╰───────────────⍟
 """
 HELP_TEXT = """
