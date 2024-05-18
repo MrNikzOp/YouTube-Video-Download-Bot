@@ -34,8 +34,8 @@ async def button(bot, update):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton('« Bᴀᴄᴋ', callback_data='home')]
-            [InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel')]
+            InlineKeyboardButton('« Bᴀᴄᴋ', callback_data='home'),
+            InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel'),
         ]
     ))
         
