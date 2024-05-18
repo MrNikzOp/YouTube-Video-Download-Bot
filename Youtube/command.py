@@ -64,8 +64,6 @@ async def about(client, message):
       if fsub == 400:
         return      
   #  await message.reply_photo(photo="https://telegra.ph/file/97e325476ebe8dd8676ad.jpg", caption="Test")      
-    await message.reply_sticker("CAACAgUAAxkBAAEBvlVk7YKnYxIHVnKW2PUwoibIR2ygGAACBAADwSQxMYnlHW4Ls8gQHgQ")
-    await asyncio.sleep(2)
     await message.reply_photo(
         photo='https://telegra.ph/file/97e325476ebe8dd8676ad.jpg', 
         caption=Translation.ABOUT_TXT,
