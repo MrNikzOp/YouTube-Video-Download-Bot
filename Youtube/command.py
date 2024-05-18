@@ -17,7 +17,7 @@ async def cancel(client, callback_query):
 async def button(bot, update):
     if update.data == "home":
         await update.message.edit_text(
-            text=Translation.START_TEXT.format(update.from_user.mention),
+            text=Translation.START_TEXT.format(message.from_user.first_name),
         #    reply_markup=Translation.START_BUTTONS,
             disable_web_page_preview=True
         )
@@ -34,6 +34,7 @@ async def button(bot, update):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
         [
+            [InlineKeyboardButton('« Bᴀᴄᴋ', callback_data='home')]
             [InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel')]
         ]
     ))
@@ -77,7 +78,7 @@ async def start(client, message):
                 InlineKeyboardButton('👥 ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+qveQSMp0Hl9mMzdh'),
             ],
             [
-                InlineKeyboardButton('♻️ About', callback_data='about'),
+                InlineKeyboardButton('♻️ Aʙᴏᴜᴛ', callback_data='about'),
                 InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel'),
             ]
         ]
