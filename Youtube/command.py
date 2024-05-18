@@ -18,13 +18,13 @@ async def button(bot, update):
     if update.data == "home":
         await update.message.edit_text(
             text=Translation.START_TEXT.format(message.from_user.first_name),
-        #    reply_markup=Translation.START_BUTTONS,
+            reply_markup=Translation.ABOUT_BUTTONS,
             disable_web_page_preview=True
         )
     elif update.data == "help":
         await update.message.edit_text(
             text=Translation.HELP_TXT,
-          #  reply_markup=Translation.HELP_BUTTONS,
+            reply_markup=Translation.ABOUT_BUTTONS,
             disable_web_page_preview=True
         )
     elif update.data == "about":
@@ -52,7 +52,10 @@ async def about(client, message):
         text=Translation.ABOUT_TXT,
         reply_markup=InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel')]
+            [
+                InlineKeyboardButton('♻️ Help', callback_data='help'),
+                InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel'),
+            ]
         ]
     ))
 
