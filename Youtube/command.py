@@ -18,7 +18,7 @@ async def button(bot, update):
     if update.data == "home":
         await update.message.edit_text(
             text=Translation.START_TEXT.format(update.from_user.mention),
-         #   reply_markup=Translation.START_BUTTONS,
+            reply_markup=Translation.START_BUTTONS,
             disable_web_page_preview=True
         )
     elif update.data == "help":
@@ -41,7 +41,7 @@ async def about(client, message):
       fsub = await handle_force_subscribe(client, message)
       if fsub == 400:
         return      
-   # await message.reply_photo(photo="https://telegra.ph/file/97e325476ebe8dd8676ad.jpg", caption="Test")      
+  #  await message.reply_photo(photo="https://telegra.ph/file/97e325476ebe8dd8676ad.jpg", caption="Test")      
     await message.reply_text(
         text=Translation.ABOUT_TXT,
         reply_markup=InlineKeyboardMarkup(
