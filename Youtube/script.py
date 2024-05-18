@@ -33,13 +33,20 @@ Enjoy using the bot!
 ╰───────────────⍟
 """
 ABOUT_BUTTONS = InlineKeyboardMarkup(
-        [[
-        InlineKeyboardButton('🏡 ʜᴏᴍᴇ', callback_data='home'),
-        InlineKeyboardButton('❔ ʜᴇʟᴘ', callback_data='help')
-        ],[
-        InlineKeyboardButton('⛔️ ᴄʟᴏsᴇ', callback_data='close')
-        ]]
-)
+        [
+            [
+                InlineKeyboardButton('📍 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/https://t.me/+qveQSMp0Hl9mMzdh'),
+            ],
+            [
+                InlineKeyboardButton('👩‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/Luffy0000007'),
+                InlineKeyboardButton('👥 ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+qveQSMp0Hl9mMzdh'),
+            ],
+            [
+                InlineKeyboardButton('♻️ Aʙᴏᴜᴛ', callback_data='about'),
+                InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel'),
+            ]
+        ]
+    )
 OWNER_TEXT = """
 OWNER
 """
