@@ -8,6 +8,7 @@ from Youtube.config import Config
 from Youtube.script import Translation
 from Youtube.forcesub import handle_force_subscribe
 
+PICS = "https://telegra.ph/file/97e325476ebe8dd8676ad.jpg"
 ########################🎊 Lisa | NT BOTS 🎊######################################################
 @Client.on_callback_query(filters.regex("cancel"))
 async def cancel(client, callback_query):
@@ -65,7 +66,7 @@ async def about(client, message):
         return      
   #  await message.reply_photo(photo="https://telegra.ph/file/97e325476ebe8dd8676ad.jpg", caption="Test")      
     await message.reply_photo(
-        photo='https://telegra.ph/file/97e325476ebe8dd8676ad.jpg', 
+        photo=PICS, 
         caption=Translation.ABOUT_TXT,
        # text=Translation.ABOUT_TXT,
         reply_markup=InlineKeyboardMarkup(
