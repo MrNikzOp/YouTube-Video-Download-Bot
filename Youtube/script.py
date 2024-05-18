@@ -30,11 +30,3 @@ Enjoy using the bot!
 ├ /thumbnail - generate video thumbnail 
 ╰───────────────⍟
 """
-ABOUT_BUTTONS = InlineKeyboardMarkup(
-        [[
-        InlineKeyboardButton('🏡 ʜᴏᴍᴇ', callback_data='home'),
-        InlineKeyboardButton('❔ ʜᴇʟᴘ', callback_data='help')
-        ],[
-        InlineKeyboardButton('⛔️ ᴄʟᴏsᴇ', callback_data='close')
-        ]]
-)
