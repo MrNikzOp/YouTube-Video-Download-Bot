@@ -47,6 +47,7 @@ ABOUT_BUTTONS = InlineKeyboardMarkup(
             ]
         ]
     )
+PICS = 'https://telegra.ph/file/97e325476ebe8dd8676ad.jpg'
 OWNER_TEXT = """
 OWNER
 """
