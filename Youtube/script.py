@@ -1,3 +1,5 @@
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
 class Translation(object):
 
     START_TEXT = '__**Hello,** {}!\n\n**Send me the YouTube link of the video you want to upload**__' 
