@@ -81,4 +81,4 @@ async def details(client,message):
                 InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel'),    
                 ]
        		    ])
-    await message.reply_photo(photo="./775f18aed5f6c9f3e5d332e158c092dd.jpg",caption="**INVITE YOUR FRIENDS**", reply_markup=reply_markup,)
+    await message.reply_photo(photo="https://telegra.ph/file/18407905c9e9cb49148aa.jpg",caption="**» രോമാഞ്ചം പ്രീമിയം 🔕\n\n✅ • ᴅᴀɪʟʏ ᴜᴘᴅᴀᴛᴇᴅ\n✅ • ɪᴏꜱ ꜱᴜᴘᴘᴏʀᴛᴇᴅ\n✅ • ꜰᴜʟʟ ᴅɪʀᴇᴄᴛ ᴠɪᴅᴇᴏꜱ\n✅ • ʀᴀʀᴇ ᴄᴏʟʟᴇᴄᴛɪᴏɴꜱ\n✅ • ᴍᴀʟʟᴜ ᴀᴜɴᴛʏ, ɢɪʀʟꜱ, ᴇᴛᴄ… ᴀᴠᴀɪʟᴀʙʟᴇ\n\n\nᴍᴀɴʏ ᴍᴏʀᴇ ꜰᴇᴀᴛᴜʀᴇꜱ 👍🏻\nᴘʀɪᴄᴇ: 100 Rs\n\nᴄʟɪᴄᴋ Pay ʙᴜᴛᴛᴏɴ & ᴘᴀʏ ᴛʜᴇ ᴀᴍᴏᴜɴᴛ ᴀɴᴅ ᴇɴᴊᴏʏ 🫦**", reply_markup=reply_markup,)
