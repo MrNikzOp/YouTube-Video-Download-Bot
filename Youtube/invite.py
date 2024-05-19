@@ -28,8 +28,14 @@ async def button(bot, update):
             ]
         ]
     ))
-
-  elif update.data == "about":
+        
+    elif update.data == "help":
+        await update.message.edit_text(
+            text=Translation.HELP_TXT,
+            reply_markup=Translation.ABOUT_BUTTONS,
+            disable_web_page_preview=True
+        )
+    elif update.data == "about":
         await update.message.edit_text(
             text=Translation.ABOUT_TXT,
            # reply_markup=Translation.ABOUT_BUTTONS,
