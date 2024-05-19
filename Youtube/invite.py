@@ -6,6 +6,28 @@ from pyrogram.types import ( InlineKeyboardButton, InlineKeyboardMarkup,ForceRep
 async def cancel(client, callback_query):
     await callback_query.message.delete()
 
+@Client.on_callback_query()
+async def button(bot, update):
+    if update.data == "home":
+        await update.message.edit_text(
+            text=Translation.START_TEXT,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton('📍 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/https://t.me/+qveQSMp0Hl9mMzdh'),
+            ],
+            [
+                InlineKeyboardButton('👩‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/Luffy0000007'),
+                InlineKeyboardButton('👥 ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+qveQSMp0Hl9mMzdh'),
+            ],
+            [
+                InlineKeyboardButton('♻️ Aʙᴏᴜᴛ', callback_data='about'),
+                InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel'),
+            ]
+        ]
+    ))
+
 elif update.data == "about":
         await update.message.edit_text(
             text=Translation.ABOUT_TXT,
