@@ -4,6 +4,8 @@ class Translation(object):
 
     START_TEXT = '__**Hello,** {}!\n\n**Send me the YouTube link of the video you want to upload**__' 
 
+    HELP_TXT = '✨ Hᴇʟʟᴏ {}!!\n\nWelcome to the YouTube Video Uploader Bot!\n\nTo Upload a YouTube Video, Simply Send me the YouTube link.\n\nEnjoy using the bot!'
+    
     ABOUT_TXT = """
 ╭───────────⍟
 ├📛 **My Name** : [YouTube Video Uploader Bot](https://t.me/Luffy0000007)
@@ -32,9 +34,8 @@ Enjoy using the bot!
 ├ /thumbnail - generate video thumbnail 
 ╰───────────────⍟
 """
-HELP_TXT = '**<b>✨ Hᴇʟʟᴏ {user}.\n\nMʏ Nᴀᴍᴇ Is {bot}.\n\nWelcome to the YouTube Video Uploader Bot!\n\nTo Upload a YouTube Video, Simply Send me the YouTube link.\n\nEnjoy using the bot!**'
 
-ABOUT_BUTTONS = InlineKeyboardMarkup(
+  ABOUT_BUTTONS = InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton('📍 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/https://t.me/+qveQSMp0Hl9mMzdh'),
