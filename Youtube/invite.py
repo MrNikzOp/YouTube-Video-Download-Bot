@@ -65,3 +65,20 @@ async def refer(client,message):
                 ]
        		    ])
     await message.reply_photo(photo="./775f18aed5f6c9f3e5d332e158c092dd.jpg",caption="**INVITE YOUR FRIENDS**", reply_markup=reply_markup,)
+
+@Client.on_message(filters.private & filters.command(["details"]))
+async def details(client,message):
+    reply_markup = InlineKeyboardMarkup(
+       		[ 
+       		  [ 
+       		    InlineKeyboardButton("📡 Sʜᴀʀᴇ Yᴏᴜʀ Lɪɴᴋ" ,url=f"https://t.me/share/url?url=https://t.me/Lufffybro_bot?start={message.from_user.id}") 
+              ],
+       		     [
+       		                    InlineKeyboardButton('✨ Aʙᴏᴜᴛ', callback_data='about'),
+       		                ],
+                [
+                InlineKeyboardButton('« Bᴀᴄᴋ', callback_data='home'),    
+                InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel'),    
+                ]
+       		    ])
+    await message.reply_photo(photo="./775f18aed5f6c9f3e5d332e158c092dd.jpg",caption="**INVITE YOUR FRIENDS**", reply_markup=reply_markup,)
