@@ -32,6 +32,8 @@ Enjoy using the bot!
 ├ /thumbnail - generate video thumbnail 
 ╰───────────────⍟
 """
+HELP_TXT = '**<b>✨ Hᴇʟʟᴏ {user}.\n\nMʏ Nᴀᴍᴇ Is {bot}.\n\nWelcome to the YouTube Video Uploader Bot!\n\nTo Upload a YouTube Video, Simply Send me the YouTube link.\n\nEnjoy using the bot!**'
+
 ABOUT_BUTTONS = InlineKeyboardMarkup(
         [
             [
