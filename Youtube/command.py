@@ -14,7 +14,7 @@ PICS = "https://telegra.ph/file/97e325476ebe8dd8676ad.jpg"
 async def cancel(client, callback_query):
     await callback_query.message.delete()
 
-@Client.on_callback_query()
+@Client.on_callback_query(filters.regex("home"))
 async def button(bot, update):
     if update.data == "home":
         await update.message.edit_text(
