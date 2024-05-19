@@ -31,7 +31,7 @@ async def button(bot, update):
         
     elif update.data == "help":
         await update.message.edit_text(
-            text=Translation.HELP_TEXT,
+            text=Translation.HELP_TXT,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
         [
