@@ -65,11 +65,9 @@ async def about(client, message):
       if fsub == 400:
         return      
   #  await message.reply_photo(photo="https://telegra.ph/file/97e325476ebe8dd8676ad.jpg", caption="Test")      
-    await message.reply_photo(
-        chat_id=message.from_user.id,
-        photo="https://telegra.ph/file/97e325476ebe8dd8676ad.jpg", 
-        caption="╭───────────⍟\n├📛 **My Name** : [YouTube Video Uploader Bot](https://t.me/YouTubeUploaderOneBot)\n├📢 **Framework** : [Pyrogram 2.0.106](https://docs.pyrogram.org/)\n├💮 **Language** : [Python 3.12.3](https://www.python.org)\n├👥 **Support Group** : [NT BOTS SUPPORT](https://t.me/NT_BOTS_SUPPORT)\n├🥏 **Channel** : [NT BOT CHANNEL](https://t.me/NT_BOT_CHANNEL)\n├⛲ **Source** : [Click Here](https://github.com/LISA-KOREA/YouTube-Video-Download-Bot)\n├🎓 **Developer** : [LISA 👑](https://t.me/Luffy0000007)\n╰───────────────⍟",
-       # text=Translation.ABOUT_TXT,
+    await message.reply_text(
+       # chat_id=message.from_user.id,
+        text=Translation.ABOUT_TXT,
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
         [
