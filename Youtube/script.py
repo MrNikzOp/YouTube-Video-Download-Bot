@@ -34,23 +34,3 @@ Enjoy using the bot!
 ├ /thumbnail - generate video thumbnail 
 ╰───────────────⍟
 """
-
-  ABOUT_BUTTONS = InlineKeyboardMarkup(
-        [
-            [
-                InlineKeyboardButton('📍 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/https://t.me/+qveQSMp0Hl9mMzdh'),
-            ],
-            [
-                InlineKeyboardButton('👩‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/Luffy0000007'),
-                InlineKeyboardButton('👥 ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+qveQSMp0Hl9mMzdh'),
-            ],
-            [
-                InlineKeyboardButton('♻️ Aʙᴏᴜᴛ', callback_data='about'),
-                InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel'),
-            ]
-        ]
-    )
-PICS = 'https://telegra.ph/file/97e325476ebe8dd8676ad.jpg'
-OWNER_TEXT = """
-OWNER
-"""
