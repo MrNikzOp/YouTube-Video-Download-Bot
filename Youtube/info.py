@@ -13,8 +13,8 @@ async def user_info(client, message):
    # from_user_id, _ = extract_user(message)
     try:
         from_user = await client.get_users(from_user_id)
-    except Exception as error:
-        return await status_message.edit(str(error))
+  #  except Exception as error:
+      #  return await status_message.edit(str(error))
     if from_user is None:
         return await status_message.edit("ɴᴏ ᴠᴀʟɪᴅ ᴜsᴇʀ_ɪᴅ / ᴍᴇssᴀɢᴇ sᴘᴇᴄɪғɪᴇᴅ")
     message_out_str = ""
