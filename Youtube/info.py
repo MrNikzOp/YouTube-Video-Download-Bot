@@ -8,7 +8,7 @@ async def cancel(client, callback_query):
     
 @Client.on_message(filters.command(["info"]))
 async def user_info(client, message):
-    status_message = await message.reply_text("`ᴩʟᴇᴀꜱᴇ ᴡᴀɪᴛ....`")
+  #  status_message = await message.reply_text("`ᴩʟᴇᴀꜱᴇ ᴡᴀɪᴛ....`")
     from_user = None
     from_user_id, _ = extract_user(message)
     try:
