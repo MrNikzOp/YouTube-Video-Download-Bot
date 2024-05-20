@@ -10,3 +10,6 @@ class Config(object):
     #Skip or add your proxy from https://github.com/rg3/youtube-dl/issues/1091#issuecomment-230163061
     HTTP_PROXY = ''
     PICS = os.environ.get('PICS' ,'https://telegra.ph/file/97e325476ebe8dd8676ad.jpg')
+    ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6807518752').split()]
+    # add premium logs channel id
+    PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002070853757'))
