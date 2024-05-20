@@ -10,7 +10,7 @@ async def cancel(client, callback_query):
 async def user_info(client, message):
   #  status_message = await message.reply_text("`ᴩʟᴇᴀꜱᴇ ᴡᴀɪᴛ....`")
     from_user = None
-    from_user_id, _ = extract_user(message)
+   # from_user_id, _ = extract_user(message)
     try:
         from_user = await client.get_users(from_user_id)
     except Exception as error:
