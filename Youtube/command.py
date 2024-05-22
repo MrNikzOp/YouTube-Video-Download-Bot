@@ -64,10 +64,7 @@ async def about(client, message, callback_query):
       fsub = await handle_force_subscribe(client, message)
       if fsub == 400:
         return 
-  #  photo_url = "https://telegra.ph/file/97e325476ebe8dd8676ad.jpg"
-  #  await message.reply_photo(photo="", caption="Test")      
-   # await message.reply_photo(photo=photo_url, caption="Here is the photo you requested.")
-        
+        await message.reply_text(
        # chat_id=message.from_user.id,
         text=Translation.ABOUT_TXT,
         disable_web_page_preview=True,
