@@ -59,7 +59,7 @@ async def button(bot, update):
             
 # About command handler
 @Client.on_message(filters.private & filters.command("about"))
-async def about(client, message, callback_query):
+async def about(client, message):
     if Config.CHANNEL:
       fsub = await handle_force_subscribe(client, message)
       if fsub == 400:
@@ -80,7 +80,7 @@ async def about(client, message, callback_query):
 
 # Start command handler
 @Client.on_message(filters.private & filters.command("start"))
-async def start(client, message, callback_query):
+async def start(client, message):
     if Config.CHANNEL:
       fsub = await handle_force_subscribe(client, message)
       if fsub == 400:
