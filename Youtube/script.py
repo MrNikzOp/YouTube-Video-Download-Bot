@@ -4,7 +4,7 @@ class Translation(object):
 
     START_TEXT = '__**Hello,** {}!\n\n**Send me the YouTube link of the video you want to upload**__' 
 
-    HOME_TEXT = '__**Hello,** {message.from_user.first_name}!\n\n**Send me the YouTube link of the video you want to upload**__'
+    HOME_TEXT = '__**Hello,** {}!\n\n**Send me the YouTube link of the video you want to upload**__'
 
     HELP_TXT = '✨ Hᴇʟʟᴏ {}!!\n\nWelcome to the YouTube Video Uploader Bot!\n\nTo Upload a YouTube Video, Simply Send me the YouTube link.\n\nEnjoy using the bot!'
     
