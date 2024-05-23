@@ -93,3 +93,23 @@ async def details(client,message):
                 ]
        		    ])
     await message.reply_photo(photo="https://telegra.ph/file/18407905c9e9cb49148aa.jpg",caption="**» രോമാഞ്ചം പ്രീമിയം 🔕\n\n✅ • ᴅᴀɪʟʏ ᴜᴘᴅᴀᴛᴇᴅ\n✅ • ɪᴏꜱ ꜱᴜᴘᴘᴏʀᴛᴇᴅ\n✅ • ꜰᴜʟʟ ᴅɪʀᴇᴄᴛ ᴠɪᴅᴇᴏꜱ\n✅ • ʀᴀʀᴇ ᴄᴏʟʟᴇᴄᴛɪᴏɴꜱ\n✅ • ᴍᴀʟʟᴜ ᴀᴜɴᴛʏ, ɢɪʀʟꜱ, ᴇᴛᴄ… ᴀᴠᴀɪʟᴀʙʟᴇ\n\n\nᴍᴀɴʏ ᴍᴏʀᴇ ꜰᴇᴀᴛᴜʀᴇꜱ 👍🏻\nᴘʀɪᴄᴇ: 100 Rs\n\nᴄʟɪᴄᴋ Pay ʙᴜᴛᴛᴏɴ & ᴘᴀʏ ᴛʜᴇ ᴀᴍᴏᴜɴᴛ ᴀɴᴅ ᴇɴᴊᴏʏ 🫦**", reply_markup=reply_markup,)
+
+@Client.on_message(filters.private & filters.command(["me"]))
+async def member(client,message):
+    reply_markup = InlineKeyboardMarkup(
+       		[ 
+       		  [ 
+       		    InlineKeyboardButton("📡 Sʜᴀʀᴇ Yᴏᴜʀ Lɪɴᴋ" ,url=f"https://t.me/share/url?url=https://t.me/Lufffybro_bot?start={message.from_user.id}") 
+              ],
+       		     [
+       		                    InlineKeyboardButton('✨ Aʙᴏᴜᴛ', callback_data='about'),
+       		                ],
+                [
+       		                    InlineKeyboardButton('📚 Hᴇʟᴘ', callback_data='help'),
+       		                ],
+                [
+                InlineKeyboardButton('« Bᴀᴄᴋ', callback_data='home'),    
+                InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel'),    
+                ]
+       		    ])
+    await message.reply_photo(photo="./775f18aed5f6c9f3e5d332e158c092dd.jpg",caption=HOME_TEXT, reply_markup=reply_markup,)
