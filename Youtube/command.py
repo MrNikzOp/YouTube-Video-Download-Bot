@@ -18,7 +18,7 @@ async def cancel(client, callback_query):
 async def button(bot, update):
     if update.data == "home":
         await update.message.edit_text(
-            text=Translation.HOME_TEXT,
+            text=Translation.HOME_TEXT.format(message.from_user.first_name),
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
         [
