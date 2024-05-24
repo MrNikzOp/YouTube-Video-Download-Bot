@@ -23,6 +23,9 @@ async def button(bot, update):
                 InlineKeyboardButton('👥 ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+qveQSMp0Hl9mMzdh'),
             ],
             [
+                InlineKeyboardButton('ADMIN', user_id=int(6807518752))
+            ],
+            [
                 InlineKeyboardButton('♻️ Aʙᴏᴜᴛ', callback_data='about'),
                 InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel'),
             ]
