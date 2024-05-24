@@ -8,7 +8,7 @@ from Youtube.config import Config
 from Youtube.script import Translation
 from Youtube.forcesub import handle_force_subscribe
 
-PICS = "https://telegra.ph/file/97e325476ebe8dd8676ad.jpg"
+PIC = "https://telegra.ph/file/97e325476ebe8dd8676ad.jpg",
 ########################🎊 Lisa | NT BOTS 🎊######################################################
 @Client.on_callback_query(filters.regex("cancel"))
 async def cancel(client, callback_query):
