@@ -118,4 +118,4 @@ async def member(client, message):
                 InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel'),    
                 ]
        		    ])
-    await message.reply_photo(photo=PIC,caption=HOME_TEXT.format(message.from_user.first_name), reply_markup=reply_markup,)
+    await message.reply_photo(photo=PIC,caption=Translation.HOME_TEXT.format(message.from_user.first_name), reply_markup=reply_markup,)
