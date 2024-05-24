@@ -65,7 +65,7 @@ async def button(bot, update):
     
 @Client.on_message(filters.private & filters.command(["invite"]))
 async def refer(client,message):
-    await message.react(emoji="🔥")
+ #   await message.react(emoji="🔥")
     reply_markup = InlineKeyboardMarkup(
        		[ 
        		  [ 
