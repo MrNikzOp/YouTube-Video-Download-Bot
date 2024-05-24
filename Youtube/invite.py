@@ -3,6 +3,9 @@ from Youtube.config import Config
 from Youtube.script import Translation
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, CallbackQuery, ForceReply
 
+PIC ="https://telegra.ph/file/97e325476ebe8dd8676ad.jpg",
+
+
 @Client.on_callback_query(filters.regex("cancel"))
 async def cancel(client, callback_query):
     await callback_query.message.delete()
@@ -115,4 +118,4 @@ async def member(client,message):
                 InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel'),    
                 ]
        		    ])
-    await message.reply_photo(photo="./775f18aed5f6c9f3e5d332e158c092dd.jpg",caption="<b>➲ ꜰɪʀꜱᴛ ɴᴀᴍᴇ:</b> {first}\n<b>➲ ʟᴀꜱᴛ ɴᴀᴍᴇ:</b> {last}\n<b>➲ ᴜꜱᴇʀɴᴀᴍᴇ:</b> {username}\n<b>➲ ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ:</b> <code>{user_id}</code>\n<b>➲ ᴅᴄ ɪᴅ:</b> <code>{dc_id}</code>", reply_markup=reply_markup,)
+    await message.reply_photo(photo=PIC,caption=HOME_TEXT, reply_markup=reply_markup,)
