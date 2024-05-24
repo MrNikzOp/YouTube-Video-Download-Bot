@@ -80,7 +80,7 @@ async def about(client, message):
 
 # Start command handler
 @Client.on_message(filters.private & filters.command("start"))
-async def start(client, message):
+async def start(client, update, message):
     if Config.CHANNEL:
       fsub = await handle_force_subscribe(client, message)
       if fsub == 400:
