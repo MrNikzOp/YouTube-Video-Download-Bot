@@ -80,13 +80,13 @@ async def about(client, message):
 
 # Start command handler
 @Client.on_message(filters.private & filters.command("start"))
-async def start(client, update, message):
+async def start(bot, update):
     if Config.CHANNEL:
       fsub = await handle_force_subscribe(client, message)
       if fsub == 400:
         return
     #user = message.from_user
-    await message.reply_text(
+    await update.reply_text(
         text=Translation.START_TEXT.format(update.from_user.mention),
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
