@@ -11,9 +11,9 @@ from Youtube.forcesub import handle_force_subscribe
 async def cancel(client, callback_query):
     await callback_query.message.delete()
 
-@Client.on_callback_query(filters.regex("details"))
+@Client.on_callback_query(filters.regex("premium"))
 async def button(bot, update):
-    if update.data == "details":
+    if update.data == "premium":
         await update.message.edit_text(
             text=Translation.MEMBER_DETAILS.format(update.from_user.mention),
             disable_web_page_preview=True,
@@ -50,7 +50,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton('രോമാഞ്ചം പ്രീമിയം 🔕', callback_data='details'),
+                InlineKeyboardButton('രോമാഞ്ചം പ്രീമിയം 🔕', callback_data='premium'),
             ]
         ]
     ))
