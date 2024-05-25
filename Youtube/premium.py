@@ -25,7 +25,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton('രോമാഞ്ചം പ്രീമിയം 🔕', callback_data='member'),
+                InlineKeyboardButton('രോമാഞ്ചം പ്രീമിയം 🔕', callback_data='help'),
             ],
             [
                 InlineKeyboardButton('♻️ Aʙᴏᴜᴛ', callback_data='about'),
