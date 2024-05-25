@@ -32,6 +32,19 @@ async def button(bot, update):
             ]
         ]
     ))
+elif update.data == "about":
+        await update.message.edit_text(
+            text=Translation.ABOUT_TXT,
+           # reply_markup=Translation.ABOUT_BUTTONS,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+        [
+            [
+            InlineKeyboardButton('« Bᴀᴄᴋ', callback_data='home'),
+            InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel'),
+            ]
+        ]
+    ))
 
 # Start command handler
 @Client.on_message(filters.private & filters.command("pst"))
@@ -50,7 +63,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton('രോമാഞ്ചം പ്രീമിയം 🔕', callback_data='premium'),
+                InlineKeyboardButton('രോമാഞ്ചം പ്രീമിയം 🔕', callback_data='about'),
             ]
         ]
     ))
