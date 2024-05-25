@@ -34,9 +34,9 @@ async def button(bot, update):
            # reply_markup=Translation.ABOUT_BUTTONS,
             disable_web_page_preview=True
         )
-    elif update.data == "about":
+    elif update.data == "details":
         await update.message.edit_text(
-            text=Translation.ABOUT_TEXT,
+            text=Translation.PREMIUM_DETAILS.format(update.from_user.mention),
            # reply_markup=Translation.ABOUT_BUTTONS,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -68,7 +68,7 @@ async def start(client, message):
                 InlineKeyboardButton('രോമാഞ്ചം പ്രീമിയം 🔕', callback_data='premium'),
             ],
             [
-                InlineKeyboardButton('♻️ Aʙᴏᴜᴛ', callback_data='about'),
+                InlineKeyboardButton('♻️ Aʙᴏᴜᴛ', callback_data='details'),
             ]
         ]
     ))
