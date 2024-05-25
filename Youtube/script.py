@@ -8,6 +8,8 @@ class Translation(object):
 
     PREMIUM_TEXT = '𝐇𝐄𝐋𝐋𝐎 {}😍👋,\n𝗦𝗲𝗹𝗲𝗰𝘁 𝗧𝗵𝗲 𝗚𝗥𝗢𝗨𝗣 𝗬𝗢𝗨 𝗪𝗔𝗡𝗧🌺‼️\n\nനിങ്ങൾക് ഇഷ്ടമുള്ള ഗ്രുപ്പ് select ചെയ്യുക.!!!'
 
+    LUFFY_IMG = 'https://telegra.ph/file/97e325476ebe8dd8676ad.jpg'
+    
     HELP_TXT = '✨ Hᴇʟʟᴏ {}!!\n\nWelcome to the YouTube Video Uploader Bot!\n\nTo Upload a YouTube Video, Simply Send me the YouTube link.\n\nEnjoy using the bot!'
     
     ABOUT_TXT = """
