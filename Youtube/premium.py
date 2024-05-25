@@ -11,11 +11,11 @@ from Youtube.forcesub import handle_force_subscribe
 async def cancel(client, callback_query):
     await callback_query.message.delete()
 
-@Client.on_callback_query(filters.regex("premium"))
+@Client.on_callback_query(filters.regex("home"))
 async def button(bot, update):
-    if update.data == "premium":
+    if update.data == "home":
         await update.message.edit_text(
-            text=Translation.MEMBER_DETAILS.format(update.from_user.mention),
+            text=Translation.HOME_TEXT.format(update.from_user.mention),
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
         [
@@ -33,7 +33,13 @@ async def button(bot, update):
         ]
     ))
         
-   elif update.data == "about":
+    elif update.data == "premium":
+        await update.message.edit_text(
+            text=Translation.PREMIUM_DETAILS.format(update.from_user.mention),
+           # reply_markup=Translation.ABOUT_BUTTONS,
+            disable_web_page_preview=True
+        )
+    elif update.data == "about":
         await update.message.edit_text(
             text=Translation.ABOUT_TXT,
            # reply_markup=Translation.ABOUT_BUTTONS,
@@ -64,7 +70,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton('രോമാഞ്ചം പ്രീമിയം 🔕', callback_data='about'),
+                InlineKeyboardButton('രോമാഞ്ചം പ്രീമിയം 🔕', callback_data='premium'),
             ]
         ]
     ))
