@@ -15,20 +15,15 @@ async def cancel(client, callback_query):
 async def button(bot, update):
     if update.data == "home":
         await update.message.edit_text(
-            text=Translation.HOME_TEXT.format(update.from_user.mention),
+            text=Translation.PREMIUM_TEXT.format(message.from_user.mention),
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton('📍 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/https://t.me/+qveQSMp0Hl9mMzdh'),
-            ],
-            [
-                InlineKeyboardButton('👩‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/Luffy0000007'),
-                InlineKeyboardButton('👥 ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+qveQSMp0Hl9mMzdh'),
+                InlineKeyboardButton('രോമാഞ്ചം പ്രീമിയം 🔕', callback_data='premium'),
             ],
             [
                 InlineKeyboardButton('♻️ Aʙᴏᴜᴛ', callback_data='about'),
-                InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel'),
             ]
         ]
     ))
@@ -41,7 +36,7 @@ async def button(bot, update):
         )
     elif update.data == "about":
         await update.message.edit_text(
-            text=Translation.ABOUT_TXT,
+            text=Translation.ABOUT_TEXT,
            # reply_markup=Translation.ABOUT_BUTTONS,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
