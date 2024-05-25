@@ -14,7 +14,7 @@ async def cancel(client, callback_query):
             
 # Premium Start command handler
 @Client.on_message(filters.private & filters.command("premium"))
-async def about(client, message):
+async def premium(client, message):
     if Config.CHANNEL:
       fsub = await handle_force_subscribe(client, message)
       if fsub == 400:
