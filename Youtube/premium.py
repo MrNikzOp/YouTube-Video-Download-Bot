@@ -28,7 +28,7 @@ async def start(client, message):
                 InlineKeyboardButton('രോമാഞ്ചം പ്രീമിയം 🔕', callback_data='premium'),
             ],
             [
-                InlineKeyboardButton('♻️ Aʙᴏᴜᴛ', callback_data='cancel'),
+                InlineKeyboardButton('♻️ Aʙᴏᴜᴛ', callback_data='about'),
             ]
         ]
     ))
