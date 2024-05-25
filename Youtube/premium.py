@@ -11,6 +11,27 @@ from Youtube.forcesub import handle_force_subscribe
 async def cancel(client, callback_query):
     await callback_query.message.delete()
 
+@Client.on_callback_query(filters.regex("details"))
+async def button(bot, update):
+    if update.data == "details":
+        await update.message.edit_text(
+            text=Translation.MEMBER_DETAILS.format(update.from_user.mention),
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton('📍 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/https://t.me/+qveQSMp0Hl9mMzdh'),
+            ],
+            [
+                InlineKeyboardButton('👩‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/Luffy0000007'),
+                InlineKeyboardButton('👥 ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+qveQSMp0Hl9mMzdh'),
+            ],
+            [
+                InlineKeyboardButton('♻️ Aʙᴏᴜᴛ', callback_data='about'),
+                InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel'),
+            ]
+        ]
+    ))
 
 # Start command handler
 @Client.on_message(filters.private & filters.command("pst"))
