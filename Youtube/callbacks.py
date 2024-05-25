@@ -39,7 +39,7 @@ async def button(bot, update):
            # reply_markup=Translation.ABOUT_BUTTONS,
             disable_web_page_preview=True
         )
-      elif update.data == "pdetails":
+      elif update.data == "member":
         await update.message.edit_text(
             text=Translation.PREMIUM_DETAILS,
             reply_markup=Translation.PREMIUM_BUTTONS,
