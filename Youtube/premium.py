@@ -22,7 +22,7 @@ async def start(client, message):
     #user = message.from_user
     await message.reply_photo(
         photo=Translation.LUFFY_IMG,
-        caption=Translation.PREMIUM_TEXT.format(message.from_user.mention),
+        caption=Translation.PREMIUM_TXT.format(message.from_user.mention),
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
         [
