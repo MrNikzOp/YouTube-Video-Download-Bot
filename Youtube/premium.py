@@ -22,6 +22,7 @@ async def start(client, message):
     #user = message.from_user
     await message.reply_sticker("CAACAgUAAxkBAAEBvlVk7YKnYxIHVnKW2PUwoibIR2ygGAACBAADwSQxMYnlHW4Ls8gQHgQ")
  #   await asyncio.sleep(2)
+    return await delete()
     await message.reply_text(
         text=Translation.PREMIUM_TEXT.format(message.from_user.mention),
         disable_web_page_preview=True,
