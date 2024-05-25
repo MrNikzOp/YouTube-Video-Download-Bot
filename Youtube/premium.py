@@ -41,7 +41,7 @@ async def start(client, message):
         return
     #user = message.from_user
     await message.reply_text(
-        text=Translation.START_TEXT.format(message.from_user.mention),
+        text=Translation.PREMIUM_TEXT.format(message.from_user.mention),
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
         [
