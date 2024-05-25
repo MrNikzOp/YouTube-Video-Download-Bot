@@ -50,3 +50,12 @@ PREMIUM_TXT = """
 
 **നിങ്ങൾക് ഇഷ്ടമുള്ള ഗ്രുപ്പ് select ചെയ്യുക.!!!**
 """
+PREMIUM_BUTTONS = InlineKeyboardMarkup(
+        [[
+        InlineKeyboardButton('🏡 ʜᴏᴍᴇ', callback_data='home'),
+        InlineKeyboardButton('❔ ʜᴇʟᴘ', callback_data='help')
+        ],[
+        InlineKeyboardButton('⛔️ ᴄʟᴏsᴇ', callback_data='close')
+        ]]
+)
+
