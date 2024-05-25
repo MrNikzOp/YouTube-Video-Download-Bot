@@ -20,7 +20,7 @@ async def start(client, message):
       if fsub == 400:
         return
     #user = message.from_user
-      m = await message.reply_sticker("CAACAgUAAxkBAAEBvlVk7YKnYxIHVnKW2PUwoibIR2ygGAACBAADwSQxMYnlHW4Ls8gQHgQ")
+      await message.reply_sticker("CAACAgUAAxkBAAEBvlVk7YKnYxIHVnKW2PUwoibIR2ygGAACBAADwSQxMYnlHW4Ls8gQHgQ")
         await asyncio.sleep(2)
     await message.reply_text(
         text=Translation.PREMIUM_TEXT.format(message.from_user.mention),
@@ -32,4 +32,3 @@ async def start(client, message):
             ]
         ]
     ))
-    return await m.delete()
