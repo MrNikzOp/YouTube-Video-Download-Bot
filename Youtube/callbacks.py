@@ -45,7 +45,7 @@ async def button(bot, update):
             ]
         ]
     ))
-        )
+        
     elif update.data == "about":
         await update.message.edit_text(
             text=Translation.ABOUT_TXT,
