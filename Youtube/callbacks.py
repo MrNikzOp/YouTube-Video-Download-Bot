@@ -33,7 +33,7 @@ async def button(bot, update):
         ]
     )) 
         
-    elif update.data == "help":
+    elif update.data == "premium":
         await update.message.edit_text(
             text=Translation.PREMIUM_DETAILS.format(update.from_user.mention),
             reply_markup=Translation.PREMIUM_BUTTONS,
