@@ -21,8 +21,8 @@ async def start(client, message):
         return
     #user = message.from_user
     await message.reply_photo(
-        caption=Translation.LUFFY_IMG,
-        text=Translation.PREMIUM_TEXT.format(message.from_user.mention),
+        photo=Translation.LUFFY_IMG,
+        caption=Translation.PREMIUM_TEXT.format(message.from_user.mention),
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
         [
