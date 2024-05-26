@@ -21,7 +21,7 @@ async def button(bot, update):
         )
     elif update.data == "help":
         await update.message.edit_text(
-            text=Translation.HELP_TEXT,
+            text=Translation.START_TEXT.format(update.from_user.mention),
             reply_markup=Translation.HELP_BUTTONS,
             disable_web_page_preview=True
         )
