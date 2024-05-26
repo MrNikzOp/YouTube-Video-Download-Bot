@@ -11,8 +11,6 @@ class Translation(object):
     LUFFY_IMG = 'https://telegra.ph/file/97e325476ebe8dd8676ad.jpg'
 
     PREMIUM_DETAILS = '**Hello  {} 🫦\n\n» രോമാഞ്ചം പ്രീമിയം 🔕\n\n✅ • Daily Videos Updated\n✅ • iOS supported\n✅ • Full Direct Videos\n✅ • Rare Collections & Hot Collections\n✅ • Mallu aunty, Girls, etc… available \n\n🔞Many more features 👍🏻\n\nPrice: 100\n\nClick Pay Button, Pay The Amount And JOIN 🫦**'
-    
-    HELP_TXT = '✨ Hᴇʟʟᴏ {}!!\n\nWelcome to the YouTube Video Uploader Bot!\n\nTo Upload a YouTube Video, Simply Send me the YouTube link.\n\nEnjoy using the bot!'
 
     INFO_TXT = """<i>
 <u>Yᴏᴜʀ Dᴇᴛᴀɪʟꜱ</u>
@@ -38,9 +36,9 @@ Thank You For Using Me❣️</i>"""
 """
     
    HELP_TEXT = """
-**✨ Hᴇʟʟᴏ {}!
+✨ Hᴇʟʟᴏ {}!
 
-Welcome To The YouTube Video Uploader Bot!
+**Welcome To The YouTube Video Uploader Bot!
 
 To Upload a YouTube Video, Simply Send Me The YouTube link.
     
