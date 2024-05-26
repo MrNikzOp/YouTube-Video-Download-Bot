@@ -15,13 +15,13 @@ class Translation(object):
     HELP_TXT = '✨ Hᴇʟʟᴏ {}!!\n\nWelcome to the YouTube Video Uploader Bot!\n\nTo Upload a YouTube Video, Simply Send me the YouTube link.\n\nEnjoy using the bot!'
 
     INFO_TXT = """<i>
-<u>👁️‍🗨️YOUR DETAILS</u>
+<u>Yᴏᴜʀ Dᴇᴛᴀɪʟꜱ</u>
 
-○ ID : <code>{id}</code>
-○ DC : <code>{dc}</code>
-○ First Name : <code>{n}<code>
-○ UserName : @{u}
-○ link : <code>https://t.me/{u}</code>
+**○ ID** : <code>{id}</code>
+**○ DC** : <code>{dc}</code>
+**○ First Name** : <code>{n}<code>
+**○ UserName** : @{u}
+**○ link** : <code>https://t.me/{u}</code>
 
 Thank You For Using Me❣️</i>"""
     
