@@ -6,8 +6,7 @@
 # [ LuffyBot ]
 
 import os
-from pyrogram import Client as app
-from pyrogram import filters
+from pyrogram import Client, filters
 from Youtube.config import Config
 
 # Create a Pyrogram client
