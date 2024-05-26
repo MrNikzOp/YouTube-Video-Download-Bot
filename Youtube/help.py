@@ -6,7 +6,7 @@ from Youtube.config import Config
 from Youtube.script import Translation
 from Youtube.forcesub import handle_force_subscribe
 
-@Client.on_message(filters.command(["op", "new"]))
+@Client.on_message(filters.command(["id", "info"]))
 async def media_info(bot, m): 
     message = m
     ff = m.from_user
@@ -36,7 +36,7 @@ async def media_info(bot, m):
             InlineKeyboardButton("✨️ Support", url="https://t.me/BETA_SUPPORT"),
             InlineKeyboardButton("📢 Updates", url="https://t.me/Beta_BoTZ")
         ]]       
-        mkn = await m.reply("please wait....")
+        mkn = await m.reply("Pʟᴇᴀꜱᴇ Wᴀɪᴛ....")
         if ff.photo:
            user_dp = await bot.download_media(message=ff.photo.big_file_id)
            await m.reply_photo(
