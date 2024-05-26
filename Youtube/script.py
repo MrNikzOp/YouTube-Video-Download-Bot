@@ -13,6 +13,17 @@ class Translation(object):
     PREMIUM_DETAILS = '**Hello  {} 🫦\n\n» രോമാഞ്ചം പ്രീമിയം 🔕\n\n✅ • Daily Videos Updated\n✅ • iOS supported\n✅ • Full Direct Videos\n✅ • Rare Collections & Hot Collections\n✅ • Mallu aunty, Girls, etc… available \n\n🔞Many more features 👍🏻\n\nPrice: 100\n\nClick Pay Button, Pay The Amount And JOIN 🫦**'
     
     HELP_TXT = '✨ Hᴇʟʟᴏ {}!!\n\nWelcome to the YouTube Video Uploader Bot!\n\nTo Upload a YouTube Video, Simply Send me the YouTube link.\n\nEnjoy using the bot!'
+
+    INFO_TXT = """<i>
+<u>👁️‍🗨️YOUR DETAILS</u>
+
+○ ID : <code>{id}</code>
+○ DC : <code>{dc}</code>
+○ First Name : <code>{n}<code>
+○ UserName : @{u}
+○ link : <code>https://t.me/{u}</code>
+
+Thank You For Using Me❣️</i>"""
     
     ABOUT_TXT = """
 ╭───────────⍟
