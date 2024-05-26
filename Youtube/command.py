@@ -56,26 +56,7 @@ async def start(client, message):
             ]
         ]
     ))
-    #user = message.from_user
-    await message.reply_photo(
-        photo=Translation.LUFFY_IMG,        
-        caption=Translation.START_TEXT.format(message.from_user.mention),
-        disable_web_page_preview=True,
-        reply_markup=InlineKeyboardMarkup(
-        [
-            [
-                InlineKeyboardButton('📍 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/https://t.me/+qveQSMp0Hl9mMzdh'),
-            ],
-            [
-                InlineKeyboardButton('👩‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/Luffy0000007'),
-                InlineKeyboardButton('👥 ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+qveQSMp0Hl9mMzdh'),
-            ],
-            [
-                InlineKeyboardButton('♻️ Aʙᴏᴜᴛ', callback_data='about'),
-                InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel'),
-            ]
-        ]
-    ))
+    
     
 # Help command handler
 @Client.on_message(filters.command("help"))
