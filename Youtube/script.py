@@ -23,10 +23,6 @@ class Translation(object):
 
 Thank You For Using Me❣️</i>"""
 
-    HELP_TEXT = """
-    
-    """
-    
     ABOUT_TXT = """
 ╭───────────⍟
 ├📛 **My Name** : [YouTube Video Uploader Bot](https://t.me/Luffy0000007)
