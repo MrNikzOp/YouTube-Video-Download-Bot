@@ -72,5 +72,12 @@ Enjoy using the bot!
                 InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel'),
             ]]
 )
- ABOUT_BUTTONS = 
+ ABOUT_BUTTONS = InlineKeyboardMarkup(
+        [[
+                InlineKeyboardButton('▒ Hᴇʟᴘ', callback_data='help'),
+            ],[
+                InlineKeyboardButton('« Bᴀᴄᴋ', callback_data='home'),
+                InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel'),
+            ]]
+ )
 
