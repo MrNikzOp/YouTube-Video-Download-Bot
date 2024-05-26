@@ -1,6 +1,6 @@
-# ©️ LISA-KOREA | @LISA_FAN_LK | NT_BOT_CHANNEL | LISA-KOREA/YouTube-Video-Download-Bot
+# ©️ LUFFY BOT | @R J | CREATED BY R J| 
 
-# [⚠️ Do not change this repo link ⚠️] :- https://github.com/LISA-KOREA/YouTube-Video-Download-Bot
+# [⚠️ Do not change this repo link ⚠️] :- 
 import os, asyncio
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, CallbackQuery, ForceReply
@@ -8,7 +8,7 @@ from Youtube.config import Config
 from Youtube.script import Translation
 from Youtube.forcesub import handle_force_subscribe
 
-########################🎊 Luffy | NT BOTS 🎊######################################################
+########################🎊 Luffy | CREATED BY R J🎊######################################################
             
 # About command handler
 @Client.on_message(filters.private & filters.command("about"))
