@@ -41,7 +41,7 @@ async def media_info(bot, m):
            user_dp = await bot.download_media(message=ff.photo.big_file_id)
            await m.reply_photo(
                photo=user_dp,
-               caption=txt.INFO_TXT.format(id=ff.id, dc=ff.dc_id, n=ff.first_name, u=ff.username),
+               caption=Translation.INFO_TXT.format(id=ff.id, dc=ff.dc_id, n=ff.first_name, u=ff.username),
                reply_markup=InlineKeyboardMarkup(buttons),
                quote=True,
                parse_mode=enums.ParseMode.HTML,
@@ -51,7 +51,7 @@ async def media_info(bot, m):
            await mkn.delete()
         else:  
            await m.reply_text(
-               text=txt.INFO_TXT.format(id=ff.id, dc=ff.dc_id, n=ff.first_name, u=ff.username),
+               text=Translation.INFO_TXT.format(id=ff.id, dc=ff.dc_id, n=ff.first_name, u=ff.username),
                reply_markup=InlineKeyboardMarkup(buttons),
                quote=True,
                parse_mode=enums.ParseMode.HTML,
