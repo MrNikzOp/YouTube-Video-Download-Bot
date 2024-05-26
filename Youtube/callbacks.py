@@ -32,21 +32,14 @@ async def button(bot, update):
             ]
         ]
     )) 
-    elif update.data == "premium":
+    elif update.data == "help":
         await update.message.edit_text(
-            text=Translation.PREMIUM_DETAILS.format(update.from_user.mention),
+            text=Translation.HELP_TEXT.format(update.from_user.mention),
             disable_web_page_preview=True        
             )
     elif update.data == "about":
         await update.message.edit_text(
             text=Translation.ABOUT_TXT,
-           # reply_markup=Translation.ABOUT_BUTTONS,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-        [
-            [
-            InlineKeyboardButton('« Bᴀᴄᴋ', callback_data='home'),
-            InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel'),
-            ]
-        ]
-    ))
+            reply_markup=Translation.ABOUT_BUTTONS,
+            disable_web_page_preview=True
+        )
