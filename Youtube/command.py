@@ -30,7 +30,6 @@ async def about(client, message):
         ]
     ))
 
-
 # Start command handler
 @Client.on_message(filters.private & filters.command("start"))
 async def start(client, message):
