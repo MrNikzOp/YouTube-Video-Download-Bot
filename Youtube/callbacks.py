@@ -34,7 +34,7 @@ async def button(bot, update):
     )) 
     elif update.data == "help":
         await update.message.edit_text(
-            text=Translation.HELP_TXT.format(update.from_user.mention),
+            text=Translation.HELP_TEXT.format(update.from_user.mention),
             disable_web_page_preview=True        
             )
     elif update.data == "about":
