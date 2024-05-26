@@ -42,29 +42,3 @@ To upload a YouTube video, simply send me the YouTube link.
 Enjoy Using The Bot!**
 """
     
-  START_BUTTONS = InlineKeyboardMarkup(
-        [[
-           InlineKeyboardButton('📍 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/https://t.me/+qveQSMp0Hl9mMzdh'),
-        ],[
-          InlineKeyboardButton('👩‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/Luffy0000007'),
-          InlineKeyboardButton('👥 ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+qveQSMp0Hl9mMzdh'),
-        ],[
-         InlineKeyboardButton('♻️ Aʙᴏᴜᴛ', callback_data='about'),
-         InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel'),
-         ]]
-     )
- ABOUT_BUTTONS = InlineKeyboardMarkup(
-        [[
-         InlineKeyboardButton('▒ Hᴇʟᴘ', callback_data='help'),
-        ],[
-         InlineKeyboardButton('« Bᴀᴄᴋ', callback_data='home'),
-         InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel'),
-        ]]
-   )
- HELP_BUTTONS = InlineKeyboardMarkup(
-        [[
-         InlineKeyboardButton('« Bᴀᴄᴋ', callback_data='home'),
-         InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel'),
-        ]]
-   )
- 
