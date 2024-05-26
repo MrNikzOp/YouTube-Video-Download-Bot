@@ -6,7 +6,7 @@ from Youtube.script import Translation
 from Youtube.forcesub import handle_force_subscribe
 
 PIC = "https://telegra.ph/file/97e325476ebe8dd8676ad.jpg",
-########################🎊 Lisa | NT BOTS 🎊######################################################
+########################🧑‍💻 Luffy | CREATED BY R J 🧑‍💻######################################################
 @Client.on_callback_query(filters.regex("cancel"))
 async def cancel(client, callback_query):
     await callback_query.message.delete()
