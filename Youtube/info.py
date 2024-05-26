@@ -35,7 +35,7 @@ async def media_info(bot, m):
         buttons = [[
             InlineKeyboardButton("✘ Cʟᴏꜱᴇ", callback_data="cancel")
         ]]       
-        mkn = await m.reply("Pʟᴇᴀꜱᴇ Wᴀɪᴛ....")
+        mkn = await m.reply("**Pʟᴇᴀꜱᴇ Wᴀɪᴛ....**")
         if ff.photo:
            user_dp = await bot.download_media(message=ff.photo.big_file_id)
            await m.reply_photo(
