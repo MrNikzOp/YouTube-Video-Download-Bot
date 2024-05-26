@@ -67,7 +67,9 @@ async def button(bot, update):
             reply_markup=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton('Pᴀʏ 100 💰', callback_data='pay'),
-            ]
+            InlineKeyboardButton('Pᴀʏ 100 💰', callback_data='pay'),
+            ],
+            InlineKeyboardButton('« Bᴀᴄᴋ', callback_data='home'),
+            InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel'),
         ]
     ))
