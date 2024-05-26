@@ -34,6 +34,13 @@ Thank You For Using Me❣️</i>"""
 ├🎓 **Developer** : **[ㅤᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ. Anonymous ❂℡](https://t.me/Luffy0000007)**
 ╰───────────────⍟
 """
+    HELP_TEXT = """
+**Welcome to the YouTube Video Uploader Bot!
+
+To upload a YouTube video, simply send me the YouTube link.
+    
+Enjoy Using The Bot!**
+"""
     
   PREMIUM_TXT = """
 𝐇𝐄𝐋𝐋𝐎 {}😍👋,
