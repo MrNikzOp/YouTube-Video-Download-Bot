@@ -42,12 +42,6 @@ To upload a YouTube video, simply send me the YouTube link.
 Enjoy Using The Bot!**
 """
     
-  PREMIUM_TXT = """
-𝐇𝐄𝐋𝐋𝐎 {}😍👋,
-𝗦𝗲𝗹𝗲𝗰𝘁 𝗧𝗵𝗲 𝗚𝗥𝗢𝗨𝗣 𝗬𝗢𝗨 𝗪𝗔𝗡𝗧🌺‼️
-
-**നിങ്ങൾക് ഇഷ്ടമുള്ള ഗ്രുപ്പ് select ചെയ്യുക.!!!**
-"""
   START_BUTTONS = InlineKeyboardMarkup(
         [[
                 InlineKeyboardButton('📍 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/https://t.me/+qveQSMp0Hl9mMzdh'),
