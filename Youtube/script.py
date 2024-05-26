@@ -22,14 +22,15 @@ class Translation(object):
 ○ link : <code>https://t.me/{u}</code>
 
 Thank You For Using Me❣️</i>"""
+    
    HELP_TXT = """
 ✨ Hᴇʟʟᴏ {}!
 
 **Welcome To The YouTube Video Uploader Bot!
-
 To Upload a YouTube Video, Simply Send Me The YouTube link.
     
-Enjoy Using The Bot!**"""
+Enjoy Using The Bot!**
+"""
     
     ABOUT_TXT = """
 ╭───────────⍟
