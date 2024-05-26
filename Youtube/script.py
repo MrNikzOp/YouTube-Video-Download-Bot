@@ -18,7 +18,7 @@ class Translation(object):
 <u>Yᴏᴜʀ Dᴇᴛᴀɪʟꜱ</u>
 
 ○ ID : <code>{id}</code>
-○ DC** : <code>{dc}</code>
+○ DC : <code>{dc}</code>
 ○ First Name : <code>{n}<code>
 ○ UserName : @{u}
 ○ link : <code>https://t.me/{u}</code>
