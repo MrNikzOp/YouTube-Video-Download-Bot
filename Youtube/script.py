@@ -22,6 +22,10 @@ class Translation(object):
 ○ link : <code>https://t.me/{u}</code>
 
 Thank You For Using Me❣️</i>"""
+
+    HELP_TEXT = """
+    
+    """
     
     ABOUT_TXT = """
 ╭───────────⍟
@@ -56,6 +60,12 @@ Thank You For Using Me❣️</i>"""
         [[
                 InlineKeyboardButton('▒ Hᴇʟᴘ', callback_data='help'),
             ],[
+                InlineKeyboardButton('« Bᴀᴄᴋ', callback_data='home'),
+                InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel'),
+            ]]
+ )
+ HELP_BUTTONS = InlineKeyboardMarkup(
+        [[
                 InlineKeyboardButton('« Bᴀᴄᴋ', callback_data='home'),
                 InlineKeyboardButton('✘ Cʟᴏꜱᴇ', callback_data='cancel'),
             ]]
