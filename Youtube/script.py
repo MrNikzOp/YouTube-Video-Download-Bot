@@ -38,21 +38,13 @@ Thank You For Using Me❣️</i>"""
 """
     
    HELP_TEXT = """
-<b>✨ Hᴇʟʟᴏ {user}.
+**✨ Hᴇʟʟᴏ {}!
 
-Mʏ Nᴀᴍᴇ Is {bot}.
+Welcome To The YouTube Video Uploader Bot!
 
-Welcome to the YouTube Video Uploader Bot!
-
-To Upload a YouTube Video, Simply Send me the YouTube link.
+To Upload a YouTube Video, Simply Send Me The YouTube link.
     
-Enjoy using the bot!
-╭───────────⍟     
-├ /start - Check Bot Online 🔔
-├ /help - How To Use The Bot 🆘
-├ /about - Something About Me 😌
-├ /thumbnail - generate video thumbnail 
-╰───────────────⍟
+Enjoy Using The Bot!**
 """
 
   PREMIUM_TXT = """
