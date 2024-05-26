@@ -28,9 +28,7 @@ Thank You For Using Me❣️</i>"""
 ├📛 **My Name** : [YouTube Video Uploader Bot](https://t.me/Luffy0000007)
 ├📢 **Framework** : [Pyrogram 2.0.106](https://docs.pyrogram.org/)
 ├💮 **Language** : [Python 3.12.3](https://www.python.org)
-├👥 **Support Group** : [LUFFY BOTS SUPPORT](https://t.me/Luffy0000007)
-├🥏 **Channel** : [LUFFY BOT CHANNEL](https://t.me/Luffy0000007)
-├⛲ **Source** : [Click Here](https://github.com/LISA-KOREA/YouTube-Video-Download-Bot)
+├⛲ **Source** : [Click Here](www.youtube.com)
 ├🎓 **Developer** : **[ㅤᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ⃝ᡃ. Anonymous ❂℡](https://t.me/Luffy0000007)**
 ╰───────────────⍟
 """
